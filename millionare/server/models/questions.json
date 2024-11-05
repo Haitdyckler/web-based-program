@@ -34,6 +34,151 @@
         ],
         "correct": 1,
         "prize": 300
-    }
+    },
+    {
+        "level": 4,
+        "question": "Which country is home to the iconic Taj Mahal?"
+        "options":[
+            "Pakistan",
+            "Bangladesh",
+            "India",
+            "Bhutan"
+        ],
+        "correct": 2,
+        "prize": 500
+    },
+    {
+        "level": 5,
+        "question": "The hammer and sickle is one of the most recognisable symbols of which political ideology?"
+        "options":[
+            "Communism",
+            "Liberalism",
+            "Conversatism",
+            "Republicanism"
+        ],
+        "correct": 0,
+        "prize": 1000
+    },
+    {
+        "level": 6,
+        "question": "In the bitble which disciple of Jesus was crucified upside down in 64 CE?"
+        "options":[
+            "Saint john",
+            "Bartholomew",
+            "Simon Peter",
+            "Judas Iscariot"
+        ],
+        "correct": 2,
+        "prize": 2000
+    },
+    {
+        "level": 7,
+        "question": "Which charater said this quote 'One shall stand, One shall fall'in a movie?"
+        "options":[
+            "Julius Ceaser",
+            "Alexander the great",
+            "Leonidas",
+            "Optimus Prime"
+        ],
+        "correct": 3,
+        "prize": 4000
+    },
+    {
+        "level": 8,
+        "question": "What does 'loquacious' mean?"
+        "options":[
+            "Chatty",
+            "Shy",
+            "Angry",
+            "Beautiful"
+        ],
+        "correct": 0,
+        "prize": 8000
+    },
+    {
+        "level": 9,
+        "question": "What British inventor is credited for developing the concept of the world's first programmable computer, the Analytical Engine, in the 1830s?"
+        "options":[
+            "Alan Turing",
+            "Ada Lovelace",
+            "Charles Babbage",
+            "John von Neumann"
+        ],
+        "correct": 2,
+        "prize": 16000
+    },
+    {
+        "level": 10,
+        "question": "What is the real name of the guitarist known as Slash, famous for his work with Guns N' Roses?"
+        "options":[
+            "Angus Young",
+            "Saul Hudson",
+            "David Howell Evans",
+            "Steve Hackett"
+        ],
+        "correct": 1,
+        "prize": 32000
+    },
+    {
+        "level": 11,
+        "question": "Who is the main protagonist in the first Assassin's creed game in 2007?"
+        "options":[
+            "Edward Kenway",
+            "Desmond Miles",
+            "Ezio Auditore da Firenze",
+            "Connor"
+        ],
+        "correct": 1,
+        "prize": 64000
+    },
+    {
+        "level": 12,
+        "question": "The Celiac Ganglia are nerve bundles located in __________ as a part of teh autonomic nervous system that is responsible for innervating the digestive tract."
+        "options":[
+            "Upper Abdomen",
+            "Lower Abdomen",
+            "Spine",
+            "Kidney"
+        ],
+        "correct": 0,
+        "prize": 125000
+    },
+    {
+        "level": 13,
+        "question": "Which programming language was originally called 'Oak'?"
+        "options":[
+            "Ruby",
+            "C++",
+            "Java",
+            "Python"
+        ],
+        "correct": 2,
+        "prize": 250000
+    },
+     {
+        "level": 14,
+        "question": "Lionel Messi scored his first Champions League goal against which team?"
+        "options":[
+            "Panathinaikos",
+            "Chelsea",
+            "Shakhtar Donetsk",
+            "Werder Bremen"
+        ],
+        "correct": 3,
+        "prize": 500000
+    },
+    {
+        "level": 15,
+        "question": "What is the name of the river in the Underworld that, according to some sources, makes those who drink from it forget their past lives?"
+        "options":[
+            "Styx",
+            "Lethe",
+            "Acheron",
+            "Phlegethon"
+        ],
+        "correct": 0,
+        "prize": 1000000
+    },
+    
   ]
   
