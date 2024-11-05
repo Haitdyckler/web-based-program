@@ -2,6 +2,7 @@ let currentQuestion = 0;
 let questions = [];
 let currentPrize = 0;
 
+
 async function fetchQuestions() {
   try {
     const response = await fetch('http://localhost:3000/api/questions');
@@ -9,6 +10,18 @@ async function fetchQuestions() {
     showQuestion();
   } catch (error) {
     console.error('Error fetching questions:', error);
+  }
+}
+function shuffleQuestionsInLevel() {
+  const currentLevelQuestions = questions.find(q => q.level === level).variants;
+  shuffleArray(currentLevelQuestions);
+  questions[level - 1].variants = currentLevelQuestions;
+}
+
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
   }
 }
 
