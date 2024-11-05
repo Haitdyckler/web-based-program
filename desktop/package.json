@@ -1,0 +1,19 @@
+{
+  "name": "millionaire-desktop",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "start-server": "cd ../server && npm start",
+    "start-all": "concurrently \"npm run start-server\" \"npm run dev\""
+  },
+  "dependencies": {
+    "electron": "^28.0.0",
+    "cross-env": "^7.0.3"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "electron-reload": "^2.0.0"
+  }
+}
