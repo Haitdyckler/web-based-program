@@ -27,10 +27,10 @@
         "level": 3,
         "question": "Who discovered America?",
         "options":[
-            "Venus",
-            "Mars",
-            "Jupiter",
-            "Saturn"
+            "Napolean",
+            "Columbus",
+            "Washington",
+            "Smith"
         ],
         "correct": 1,
         "prize": 300
