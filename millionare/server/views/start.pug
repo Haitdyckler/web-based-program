@@ -1,0 +1,15 @@
+extends layout
+block content
+  .start-screen
+    .logo-container
+      h1.game-logo Who Wants to Be a 
+        span.millionaire Millionaire?
+    .start-button-container
+      button#start-game.start-button PLAY NOW
+      .instructions Press ENTER to Start
+    .decorative-lights
+      //- These will be styled with CSS to create the show lighting effect
+      each val in Array(10)
+        .light
+  
+  script(src='/js/start.js')
