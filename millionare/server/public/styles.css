@@ -1,62 +1,178 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #000033;
-    color: white;
-    background-image: url(https://github.com/Haitdyckler/up__1/blob/main/MillionaireBg.jpg);
-  }
-  
-  .game-container {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .header {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .question-container {
-    background-color: #000066;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .options {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-  
-  .option {
-    background-color: #000099;
-    padding: 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .option:hover {
-    background-color: #0000cc;
-  }
-  
-  .lifelines {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .lifelines button {
-    padding: 10px 20px;
-    background-color: #000099;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .lifelines button:hover {
-    background-color: #0000cc;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #000033;
+  color: white;
+  background-image: url('../images/MillionaireBg.jpg');
+  background-size: cover; /* Ensures the background image covers the entire screen */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: flex-start; /* Aligns content from top */
+}
+
+.game-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; /* Stacks content vertically */
+  flex-grow: 1; /* Allow the container to grow to fill the available space */
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.lifelines {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px; /* Space between lifelines and questions */
+}
+
+.lifelines button {
+  padding: 10px 20px;
+  background-color: #000099;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.lifelines button:hover {
+  background-color: #0000cc;
+}
+
+.question-container {
+  background-color: #000066;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Space between question container and options */
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 20px; /* Space between answers and options */
+}
+
+.option {
+  background-color: #000099;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.option:hover {
+  background-color: #0000cc;
+}
+.start-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #000066 0%, #000033 100%);
+  position: relative;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 2rem;
+  animation: fadeIn 2s ease-in;
+}
+
+.game-logo {
+  font-size: 3.5rem;
+  color: #fff;
+  text-shadow: 0 0 10px #4444ff, 0 0 20px #4444ff;
+  margin: 0;
+  padding: 20px;
+}
+
+.millionaire {
+  display: block;
+  font-size: 4.5rem;
+  color: #ffd700;
+  text-shadow: 0 0 10px #ff8c00, 0 0 20px #ff8c00;
+}
+
+.start-button-container {
+  text-align: center;
+  animation: pulse 2s infinite;
+}
+
+.start-button {
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  background: linear-gradient(to bottom, #000099, #000066);
+  border: 2px solid #4444ff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.start-button:hover {
+  background: linear-gradient(to bottom, #0000cc, #000099);
+  transform: scale(1.05);
+  text-shadow: 0 0 10px #fff;
+}
+
+.instructions {
+  color: #fff;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.decorative-lights {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.light {
+  position: absolute;
+  width: 4px;
+  height: 100px;
+  background: linear-gradient(to bottom, transparent, #4444ff, transparent);
+  animation: lightMove 4s infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes lightMove {
+  0% { transform: translateY(-100%) rotate(45deg); opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { transform: translateY(100%) rotate(45deg); opacity: 0; }
+}
+
+/* Position the lights at different locations */
+.light:nth-child(1) { left: 10%; animation-delay: 0s; }
+.light:nth-child(2) { left: 20%; animation-delay: 0.4s; }
+.light:nth-child(3) { left: 30%; animation-delay: 0.8s; }
+.light:nth-child(4) { left: 40%; animation-delay: 1.2s; }
+.light:nth-child(5) { left: 50%; animation-delay: 1.6s; }
+.light:nth-child(6) { left: 60%; animation-delay: 2s; }
+.light:nth-child(7) { left: 70%; animation-delay: 2.4s; }
+.light:nth-child(8) { left: 80%; animation-delay: 2.8s; }
+.light:nth-child(9) { left: 90%; animation-delay: 3.2s; }
+.light:nth-child(10) { left: 95%; animation-delay: 3.6s; }
