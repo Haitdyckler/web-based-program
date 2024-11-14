@@ -4,6 +4,7 @@ block content
     .logo-container
       h1.game-logo Who Wants to Be a 
         span.millionaire Millionaire?
+      img(src='../images/logo.png', alt='logo', style='width:250px')
     .start-button-container
       button#start-game.start-button PLAY NOW
       .instructions Press ENTER to Start
@@ -11,5 +12,6 @@ block content
       //- These will be styled with CSS to create the show lighting effect
       each val in Array(10)
         .light
+    
   
   script(src='/js/start.js')
