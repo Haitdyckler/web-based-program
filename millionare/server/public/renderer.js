@@ -26,6 +26,9 @@ function shuffleArray(array) {
 }
 
 function showQuestion() {
+  if (currentQuestion >= 10) {
+    shuffleQuestionsInLevel();
+  }
   if (currentQuestion >= questions.length) {
     alert('Congratulations! You\'ve won the game!');
     return;
@@ -49,8 +52,8 @@ function showQuestion() {
 
 function checkAnswer(selectedIndex) {
   const question = questions[currentQuestion];
-  if (selectedIndex === question.correct) {
-    currentPrize += question.prize;
+  if (selectedIndex == question.correct) {
+    currentPrize = question.prize;
     currentQuestion++;
     setTimeout(showQuestion, 1000);
     alert('Correct!');
@@ -64,6 +67,10 @@ function resetGame() {
   currentQuestion = 0;
   currentPrize = 0;
   showQuestion();
+
+  document.getElementById('fifty-fifty').disabled = false;
+  document.getElementById('phone-friend').disabled = false;
+  document.getElementById('ask-audience').disabled = false;
 }
 
 // Lifeline implementations
