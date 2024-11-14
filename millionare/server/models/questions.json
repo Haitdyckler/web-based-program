@@ -37,7 +37,7 @@
     },
     {
         "level": 4,
-        "question": "Which country is home to the iconic Taj Mahal?"
+        "question": "Which country is home to the iconic Taj Mahal?",
         "options":[
             "Pakistan",
             "Bangladesh",
@@ -49,7 +49,7 @@
     },
     {
         "level": 5,
-        "question": "The hammer and sickle is one of the most recognisable symbols of which political ideology?"
+        "question": "The hammer and sickle is one of the most recognisable symbols of which political ideology?",
         "options":[
             "Communism",
             "Liberalism",
@@ -61,7 +61,7 @@
     },
     {
         "level": 6,
-        "question": "In the bitble which disciple of Jesus was crucified upside down in 64 CE?"
+        "question": "In the bitble which disciple of Jesus was crucified upside down in 64 CE?",
         "options":[
             "Saint john",
             "Bartholomew",
@@ -73,7 +73,7 @@
     },
     {
         "level": 7,
-        "question": "Which charater said this quote 'One shall stand, One shall fall'in a movie?"
+        "question": "Which charater said this quote 'One shall stand, One shall fall'in a movie?",
         "options":[
             "Julius Ceaser",
             "Alexander the great",
@@ -85,7 +85,7 @@
     },
     {
         "level": 8,
-        "question": "What does 'loquacious' mean?"
+        "question": "What does 'loquacious' mean?",
         "options":[
             "Chatty",
             "Shy",
@@ -97,7 +97,7 @@
     },
     {
         "level": 9,
-        "question": "What British inventor is credited for developing the concept of the world's first programmable computer, the Analytical Engine, in the 1830s?"
+        "question": "What British inventor is credited for developing the concept of the world's first programmable computer, the Analytical Engine, in the 1830s?",
         "options":[
             "Alan Turing",
             "Ada Lovelace",
@@ -109,7 +109,19 @@
     },
     {
         "level": 10,
-        "question": "What is the real name of the guitarist known as Slash, famous for his work with Guns N' Roses?"
+        "question": "Which actor played the 11th Doctor in Doctor Who?",
+        "options":[
+            "David Tennant",
+            "Robert Downey Jr.",
+            "Math Smith",
+            "Jack Black"
+        ],
+        "correct": 2,
+        "prize": 32000
+    },
+    {
+        "level": 10,
+        "question": "What is the real name of the guitarist known as Slash, famous for his work with Guns N' Roses?",
         "options":[
             "Angus Young",
             "Saul Hudson",
@@ -121,7 +133,19 @@
     },
     {
         "level": 11,
-        "question": "Who is the main protagonist in the first Assassin's creed game in 2007?"
+        "question": "Which of these characters did not appear in Super Smash Bros Ultimate?",
+        "options":[
+            "Waluigi",
+            "Mario",
+            "Sonic the Hedgehog",
+            "Wii Fit Trainer"
+        ],
+        "correct": 0,
+        "prize": 64000
+    },
+    {
+        "level": 11,
+        "question": "Who is the main protagonist in the first Assassin's creed game in 2007?",
         "options":[
             "Edward Kenway",
             "Desmond Miles",
@@ -133,7 +157,7 @@
     },
     {
         "level": 12,
-        "question": "The Celiac Ganglia are nerve bundles located in __________ as a part of teh autonomic nervous system that is responsible for innervating the digestive tract."
+        "question": "The Celiac Ganglia are nerve bundles located in __________ as a part of teh autonomic nervous system that is responsible for innervating the digestive tract.",
         "options":[
             "Upper Abdomen",
             "Lower Abdomen",
@@ -145,7 +169,7 @@
     },
     {
         "level": 13,
-        "question": "Which programming language was originally called 'Oak'?"
+        "question": "Which programming language was originally called 'Oak'?",
         "options":[
             "Ruby",
             "C++",
@@ -157,7 +181,7 @@
     },
      {
         "level": 14,
-        "question": "Lionel Messi scored his first Champions League goal against which team?"
+        "question": "Lionel Messi scored his first Champions League goal against which team?",
         "options":[
             "Panathinaikos",
             "Chelsea",
@@ -169,7 +193,7 @@
     },
     {
         "level": 15,
-        "question": "What is the name of the river in the Underworld that, according to some sources, makes those who drink from it forget their past lives?"
+        "question": "What is the name of the river in the Underworld that, according to some sources, makes those who drink from it forget their past lives?",
         "options":[
             "Styx",
             "Lethe",
@@ -178,7 +202,7 @@
         ],
         "correct": 0,
         "prize": 1000000
-    },
+    }
     
   ]
   
