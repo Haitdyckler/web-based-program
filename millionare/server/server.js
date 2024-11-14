@@ -14,6 +14,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Web routes
 app.get('/', (req, res) => {
+  res.render('start');
+});
+
+app.get('/game', (req, res) => {
   res.render('game');
 });
 
